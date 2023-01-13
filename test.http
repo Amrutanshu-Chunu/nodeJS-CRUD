@@ -1,0 +1,30 @@
+### get All Product
+
+GET http://localhost:8908/api/products HTTP/1.1
+
+### get Single Product
+GET http://localhost:8908/api/products/63bf2861fa64ba74a34bba65 HTTP/1.1
+
+### Add items
+POST http://localhost:8908/api/products HTTP/1.1
+Content-Type: application/Json
+
+{
+"name":"Hello Amrutanshu" ,
+"email": "amrutanshup@gmail.com",
+"age": "25"
+}
+
+### update item
+PUT http://localhost:8908/api/products/63bf2861fa64ba74a34bba65 HTTP/1.1
+Content-Type: application/Json
+
+{
+ "name": "UpdatedChunu",
+ "email": "chunu@gmail.com",
+ "age": "26"
+}
+
+### Delete
+DELETE  http://localhost:8908/api/products/63c018efb9c7a4d80d6ae59f HTTP/1.1
+
